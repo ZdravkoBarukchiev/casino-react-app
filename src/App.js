@@ -1,11 +1,13 @@
-import { Games } from './components/games/Games';
-import { Home } from './components/homePage/Home';
+import { Games } from "./components/games/Games";
+import { Home } from "./components/homePage/Home";
+import { Licens } from "./components/licens/Licens";
 
 function App() {
   return (
     <div className="App">
-      <Home/>
-      <Games/>
+      <Home />
+      <Games />
+      <Licens />
     </div>
   );
 }
