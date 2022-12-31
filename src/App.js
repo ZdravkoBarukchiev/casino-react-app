@@ -1,3 +1,4 @@
+import { Customer } from "./components/customer/Customer";
 import { Games } from "./components/games/Games";
 import { Home } from "./components/homePage/Home";
 import { Licens } from "./components/licens/Licens";
@@ -8,6 +9,7 @@ function App() {
       <Home />
       <Games />
       <Licens />
+      <Customer />
     </div>
   );
 }
