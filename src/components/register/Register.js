@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-export const Customer = () => {
+export const Register = () => {
   return (
     <div>
       <header>
@@ -44,36 +44,65 @@ export const Customer = () => {
           </div>
         </div>
       </header>
-      <div id="customer" className="customer">
+      <div id="contact" className="reqeste">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="titlepage">
-                <h2>What Says Our customer</h2>
+                <h2>Register</h2>
                 <span />
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-md-10 offset-md-1">
-              <div className="customer_text">
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable.There are many variations of passages
-                  of Lorem Ipsum available, but the majority have suffered
-                  alteration in some form, by injected humour, or randomised
-                  words which don't look even slightly believable.
-                </p>
-                <div className="customer_box">
-                  <i>
-                    <img src="images/customer.png" alt="#" />
-                  </i>
-                  <h4>Mark jo</h4>
-                  <span>jected humour</span>
+            <div className="col-md-6 offset-md-3">
+              <form id="cochang" className="form_main">
+                <div className="row">
+                  <div className="col-md-12">
+                    <input
+                      className="form_control"
+                      placeholder="Username"
+                      type="text"
+                      name="Username"
+                    />
+                  </div>
+                  <div className="col-md-12">
+                    <input
+                      className="form_control"
+                      placeholder="Phone number"
+                      type="text"
+                      name="Phone number"
+                    />
+                  </div>
+                  <div className="col-md-12">
+                    <input
+                      className="form_control"
+                      placeholder="Email"
+                      type="text"
+                      name="Email"
+                    />
+                  </div>
+                  <div className="col-md-12">
+                    <input
+                      className="form_control"
+                      placeholder="Password"
+                      type="text"
+                      name="Password"
+                    />
+                  </div>
+                  <div className="col-md-12">
+                    <input
+                      className="form_control"
+                      placeholder="Confirm Password"
+                      type="text"
+                      name="Confirm Password"
+                    />
+                  </div>
+                  <div className="col-md-12">
+                    <button className="send_btn">Send</button>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>

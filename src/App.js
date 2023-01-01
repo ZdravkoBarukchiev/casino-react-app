@@ -4,6 +4,7 @@ import { Games } from "./components/games/Games";
 import { Home } from "./components/homePage/Home";
 import { Licens } from "./components/licens/Licens";
 import { Promotins } from "./components/promotins/Promotins";
+import { Register } from "./components/register/Register";
 import { Reqeste } from "./components/reqeste/Reqeste";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/customer" element={<Customer />} />
         <Route path="/reqeste" element={<Reqeste />} />
         <Route path="/promotins" element={<Promotins />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </div>
   );
