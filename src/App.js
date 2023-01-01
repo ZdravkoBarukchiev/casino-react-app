@@ -4,6 +4,7 @@ import { Footer } from "./components/footer/Footer";
 import { Games } from "./components/games/Games";
 import { Home } from "./components/homePage/Home";
 import { Licens } from "./components/licens/Licens";
+import { Promotins } from "./components/promotins/Promitins";
 import { Reqeste } from "./components/reqeste/Reqeste";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/customer" element={<Customer />} />
         <Route path="/reqeste" element={<Reqeste />} />
         <Route path="/footer" element={<Footer />} />
+        <Route path="/promotins" element={<Promotins />} />
       </Routes>
     </div>
   );
