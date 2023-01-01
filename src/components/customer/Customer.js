@@ -34,7 +34,7 @@ export const Customer = () => {
                         <Link to="/register">Register</Link>
                       </li>
                       <li className="menu_iconb">
-                        <Link to="/">Login</Link>
+                        <Link to="/login">Login</Link>
                       </li>
                     </ul>
                   </div>

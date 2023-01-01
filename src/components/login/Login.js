@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-export const Register = () => {
+export const Login = () => {
   return (
     <div>
       <header>
@@ -49,7 +49,7 @@ export const Register = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="titlepage">
-                <h2>Register</h2>
+                <h2>Login</h2>
                 <span />
               </div>
             </div>
@@ -69,33 +69,9 @@ export const Register = () => {
                   <div className="col-md-12">
                     <input
                       className="form_control"
-                      placeholder="Phone number"
-                      type="text"
-                      name="Phone number"
-                    />
-                  </div>
-                  <div className="col-md-12">
-                    <input
-                      className="form_control"
-                      placeholder="Email"
-                      type="text"
-                      name="Email"
-                    />
-                  </div>
-                  <div className="col-md-12">
-                    <input
-                      className="form_control"
                       placeholder="Password"
                       type="text"
                       name="Password"
-                    />
-                  </div>
-                  <div className="col-md-12">
-                    <input
-                      className="form_control"
-                      placeholder="Confirm Password"
-                      type="text"
-                      name="Confirm Password"
                     />
                   </div>
                   <div className="col-md-12">
