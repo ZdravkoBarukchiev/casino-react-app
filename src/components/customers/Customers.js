@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-export const Customer = () => {
+export const Customers = () => {
   return (
     <div>
       <header>
@@ -49,7 +49,7 @@ export const Customer = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="titlepage">
-                <h2>What Says Our customer</h2>
+                <h2>What Says Our customers</h2>
                 <span />
               </div>
             </div>
@@ -74,6 +74,61 @@ export const Customer = () => {
                   <span>jected humour</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" className="reqeste">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="titlepage">
+                <h2>Reqeste A call back</h2>
+                <span />
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-6 offset-md-3">
+              <form id="cochang" className="form_main">
+                <div className="row">
+                  <div className="col-md-12">
+                    <input
+                      className="form_control"
+                      placeholder="Name"
+                      type="text"
+                      name="Name"
+                    />
+                  </div>
+                  <div className="col-md-12">
+                    <input
+                      className="form_control"
+                      placeholder="Phone number"
+                      type="text"
+                      name="Phone number"
+                    />
+                  </div>
+                  <div className="col-md-12">
+                    <input
+                      className="form_control"
+                      placeholder="Email"
+                      type="text"
+                      name="Email"
+                    />
+                  </div>
+                  <div className="col-md-12">
+                    <input
+                      className="form_control"
+                      placeholder="Message"
+                      type="text"
+                      name="Message"
+                    />
+                  </div>
+                  <div className="col-md-12">
+                    <button className="send_btn">Send</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
