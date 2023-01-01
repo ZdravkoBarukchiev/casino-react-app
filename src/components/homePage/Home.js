@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <div className="wrapper">
@@ -22,19 +23,19 @@ export const Home = () => {
                     <div className="right_header_info">
                       <ul>
                         <li className="menu_iconb">
-                          <a href="/">Home</a>
+                          <Link to="/">Home</Link>
                         </li>
                         <li className="menu_iconb">
-                          <a href="/">Promotins</a>
+                          <Link to="/promotins">Promotins</Link>
                         </li>
                         <li className="menu_iconb">
-                          <a href="/">Games</a>
+                          <Link to="/games">Games</Link>
                         </li>
                         <li className="menu_iconb">
-                          <a href="/">Contact</a>
+                          <Link to="/">Contact</Link>
                         </li>
                         <li className="menu_iconb">
-                          <a href="/">Login</a>
+                          <Link to="/">Login</Link>
                         </li>
                       </ul>
                     </div>
@@ -86,19 +87,25 @@ export const Home = () => {
                       <ul className="Menu_footer">
                         <li className="active">
                           {" "}
-                          <a href="index.html">Home</a>{" "}
+                          <Link to="/">Home</Link>{" "}
                         </li>
                         <li>
-                          <a href="#about">Promotins</a>{" "}
+                          <Link to="/promotins">Promotins</Link>{" "}
                         </li>
                         <li>
-                          <a href="#game">Game</a>{" "}
+                          <Link to="/games">Games</Link>{" "}
                         </li>
                         <li>
-                          <a href="#customer">customer</a>{" "}
+                          <Link to="/customer">customer</Link>{" "}
                         </li>
                         <li>
-                          <a href="#conatct">Conatct</a>
+                          <Link to="/reqeste">Reqeste</Link>
+                        </li>
+                        <li>
+                          <Link to="/licens">Licens</Link>
+                        </li>
+                        <li>
+                          <Link href="/">Contact</Link>
                         </li>
                       </ul>
                     </div>

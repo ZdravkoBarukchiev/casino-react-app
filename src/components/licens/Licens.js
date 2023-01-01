@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const Licens = () => {
   return (
     <div className="licens">
@@ -42,19 +43,22 @@ export const Licens = () => {
                       <ul className="Menu_footer">
                         <li className="active">
                           {" "}
-                          <a href="index.html">Home</a>{" "}
+                          <Link to="/">Home</Link>{" "}
                         </li>
                         <li>
-                          <a href="#about">Promotins</a>{" "}
+                          <Link to="/promotins">Promotins</Link>{" "}
                         </li>
                         <li>
-                          <a href="#game">Game</a>{" "}
+                          <Link to="/games">Games</Link>{" "}
                         </li>
                         <li>
-                          <a href="#customer">customer</a>{" "}
+                          <Link to="/customer">customer</Link>{" "}
                         </li>
                         <li>
-                          <a href="#conatct">Conatct</a>
+                          <Link to="/reqeste">Reqeste</Link>
+                        </li>
+                        <li>
+                          <Link to="/">Conatct</Link>
                         </li>
                       </ul>
                     </div>
