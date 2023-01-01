@@ -11,9 +11,9 @@ export const Customers = () => {
                   <div className="full">
                     <div className="center-desk">
                       <div className="logo">
-                        <a href="index.html">
+                        <Link to="/">
                           <img src="images/logo.png" alt="#" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
