@@ -45,7 +45,7 @@ export const Licens = () => {
                           <a href="index.html">Home</a>{" "}
                         </li>
                         <li>
-                          <a href="#about">About</a>{" "}
+                          <a href="#about">Promotins</a>{" "}
                         </li>
                         <li>
                           <a href="#game">Game</a>{" "}

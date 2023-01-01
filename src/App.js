@@ -3,7 +3,7 @@ import { Customer } from "./components/customer/Customer";
 import { Games } from "./components/games/Games";
 import { Home } from "./components/homePage/Home";
 import { Licens } from "./components/licens/Licens";
-import { Promotins } from "./components/promotins/Promitins";
+import { Promotins } from "./components/promotins/Promotins";
 import { Reqeste } from "./components/reqeste/Reqeste";
 
 function App() {

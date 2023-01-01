@@ -25,7 +25,7 @@ export const Home = () => {
                           <a href="/">Home</a>
                         </li>
                         <li className="menu_iconb">
-                          <a href="/">About</a>
+                          <a href="/">Promotins</a>
                         </li>
                         <li className="menu_iconb">
                           <a href="/">Games</a>
@@ -89,7 +89,7 @@ export const Home = () => {
                           <a href="index.html">Home</a>{" "}
                         </li>
                         <li>
-                          <a href="#about">About</a>{" "}
+                          <a href="#about">Promotins</a>{" "}
                         </li>
                         <li>
                           <a href="#game">Game</a>{" "}
