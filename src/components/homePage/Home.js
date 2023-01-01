@@ -32,7 +32,7 @@ export const Home = () => {
                           <Link to="/games">Games</Link>
                         </li>
                         <li className="menu_iconb">
-                          <Link to="/">Contact</Link>
+                          <Link to="/">Register</Link>
                         </li>
                         <li className="menu_iconb">
                           <Link to="/">Login</Link>
@@ -96,16 +96,13 @@ export const Home = () => {
                           <Link to="/games">Games</Link>{" "}
                         </li>
                         <li>
-                          <Link to="/customer">customer</Link>{" "}
+                          <Link to="/customer">Customer</Link>{" "}
                         </li>
                         <li>
                           <Link to="/reqeste">Reqeste</Link>
                         </li>
                         <li>
                           <Link to="/licens">Licens</Link>
-                        </li>
-                        <li>
-                          <Link href="/">Contact</Link>
                         </li>
                       </ul>
                     </div>

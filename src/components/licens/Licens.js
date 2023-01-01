@@ -52,13 +52,10 @@ export const Licens = () => {
                           <Link to="/games">Games</Link>{" "}
                         </li>
                         <li>
-                          <Link to="/customer">customer</Link>{" "}
+                          <Link to="/customer">Customer</Link>{" "}
                         </li>
                         <li>
                           <Link to="/reqeste">Reqeste</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Conatct</Link>
                         </li>
                       </ul>
                     </div>

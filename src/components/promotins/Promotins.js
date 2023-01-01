@@ -31,7 +31,7 @@ export const Promotins = () => {
                         <Link to="/games">Games</Link>
                       </li>
                       <li className="menu_iconb">
-                        <Link to="/">Contact</Link>
+                        <Link to="/">Register</Link>
                       </li>
                       <li className="menu_iconb">
                         <Link to="/">Login</Link>
