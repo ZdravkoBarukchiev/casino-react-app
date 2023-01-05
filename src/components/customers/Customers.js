@@ -35,6 +35,9 @@ export const Customers = () => {
                         <li className="menu_iconb">
                           <Link to="/games">Games</Link>
                         </li>
+                        <li className="menu_iconb">
+                          <Link to="/logout">Logout</Link>
+                        </li>
                       </ul>
                     </div>
                   </div>

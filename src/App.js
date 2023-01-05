@@ -4,6 +4,7 @@ import { Games } from "./components/games/Games";
 import { Home } from "./components/homePage/Home";
 import { Licens } from "./components/licens/Licens";
 import { Login } from "./components/login/Login";
+import { Logout } from "./components/logout/Logout";
 import { Promotins } from "./components/promotins/Promotins";
 import { Register } from "./components/register/Register";
 import { LoginContext } from "./context/loginContext";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/promotins" element={<Promotins />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/logout" element={<Logout />} />
         </Routes>
       </LoginContext.Provider>
     </div>
