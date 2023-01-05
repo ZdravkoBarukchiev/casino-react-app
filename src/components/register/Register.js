@@ -1,5 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { LoginContext } from "../../context/loginContext";
 export const Register = () => {
+  const navigate = useNavigate();
+  const { userLogin } = useContext(LoginContext);
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const email = formData.get("email");
+    const password = formData.get("password");
+    const confirmPassword = formData.get("confirm-password");
+    const url = "http://localhost:3030/users/register";
+    if (password !== confirmPassword) {
+      return;
+    }
+    fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        userLogin(result);
+        navigate("/");
+      });
+  };
   return (
     <div>
       <header>
@@ -56,14 +81,14 @@ export const Register = () => {
           </div>
           <div className="row">
             <div className="col-md-6 offset-md-3">
-              <form id="cochang" className="form_main">
+              <form id="cochang" className="form_main" onSubmit={onSubmit}>
                 <div className="row">
                   <div className="col-md-12">
                     <input
                       className="form_control"
                       placeholder="Email"
                       type="text"
-                      name="Email"
+                      name="email"
                     />
                   </div>
                   <div className="col-md-12">
@@ -71,7 +96,7 @@ export const Register = () => {
                       className="form_control"
                       placeholder="Password"
                       type="text"
-                      name="Password"
+                      name="password"
                     />
                   </div>
                   <div className="col-md-12">
@@ -79,7 +104,7 @@ export const Register = () => {
                       className="form_control"
                       placeholder="Confirm Password"
                       type="text"
-                      name="Confirm Password"
+                      name="confirm-password"
                     />
                   </div>
                   <div className="col-md-12">
