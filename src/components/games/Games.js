@@ -1,7 +1,16 @@
 import { Navigation } from "../navigation/Navigation";
 import { Footer } from "../footer/Footer";
+import { Game } from "./game/Game";
 
 export const Games = () => {
+  const allGames = [
+    { name: "Game 1", image: "images/game1.jpg" },
+    { name: "Game 2", image: "images/game2.jpg" },
+    { name: "Game 3", image: "images/game3.jpg" },
+    { name: "Game 4", image: "images/game4.jpg" },
+    { name: "Game 5", image: "images/game5.jpg" },
+    { name: "Game 6", image: "images/game6.jpg" },
+  ];
   return (
     <>
       <Navigation />
@@ -16,66 +25,9 @@ export const Games = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4 padding_bottom">
-              <div className="game_box">
-                <figure>
-                  <img src="images/game1.jpg" alt="#" />
-                </figure>
-              </div>
-              <div className="game">
-                <h3>Game 1</h3>
-              </div>
-            </div>
-            <div className="col-md-4 padding_bottom">
-              <div className="game_box">
-                <figure>
-                  <img src="images/game2.jpg" alt="#" />
-                </figure>
-              </div>
-              <div className="game">
-                <h3>Game 2</h3>
-              </div>
-            </div>
-            <div className="col-md-4 padding_bottom">
-              <div className="game_box">
-                <figure>
-                  <img src="images/game3.jpg" alt="#" />
-                </figure>
-              </div>
-              <div className="game">
-                <h3>Game 3</h3>
-              </div>
-            </div>
-            <div className="col-md-4 margin_bottom1">
-              <div className="game_box">
-                <figure>
-                  <img src="images/game4.jpg" alt="#" />
-                </figure>
-              </div>
-              <div className="game">
-                <h3>Game 4</h3>
-              </div>
-            </div>
-            <div className="col-md-4 margin_bottom1">
-              <div className="game_box">
-                <figure>
-                  <img src="images/game5.jpg" alt="#" />
-                </figure>
-              </div>
-              <div className="game">
-                <h3>Game 5</h3>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="game_box">
-                <figure>
-                  <img src="images/game6.jpg" alt="#" />
-                </figure>
-              </div>
-              <div className="game">
-                <h3>Game 6</h3>
-              </div>
-            </div>
+            {allGames.map((g) => (
+              <Game name={g.name} image={g.image} />
+            ))}
           </div>
         </div>
       </div>
