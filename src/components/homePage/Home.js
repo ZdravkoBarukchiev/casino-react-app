@@ -5,28 +5,7 @@ export const Home = () => {
   return (
     <div className="wrapper">
       <div id="content">
-        <header>
-          <div className="head_top">
-            <div className="header">
-              <div className="container-fluid">
-                <div className="row">
-                  <div className="col-md-3 logo_section">
-                    <div className="full">
-                      <div className="center-desk">
-                        <div className="logo">
-                          <Link to="/">
-                            <img src="images/logo.png" alt="#" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {<Navigation />}
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
+        {<Navigation />}
         <section className="slider_section">
           <div className="banner_main">
             <img src="images/bg_main.jpg" alt="#" />
