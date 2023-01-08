@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { LoginContext } from "../../context/loginContext";
+import { Navigation } from "../navigation/Navigation";
 export const Register = () => {
   const navigate = useNavigate();
   const { userLogin } = useContext(LoginContext);
@@ -26,49 +27,8 @@ export const Register = () => {
       });
   };
   return (
-    <div>
-      <header>
-        <div className="head_top">
-          <div className="header">
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col-md-3 logo_section">
-                  <div className="full">
-                    <div className="center-desk">
-                      <div className="logo">
-                        <Link to="/">
-                          <img src="images/logo.png" alt="#" />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-9">
-                  <div className="right_header_info">
-                    <ul>
-                      <li className="menu_iconb">
-                        <Link to="/">Home</Link>
-                      </li>
-                      <li className="menu_iconb">
-                        <Link to="/promotins">Promotins</Link>
-                      </li>
-                      <li className="menu_iconb">
-                        <Link to="/games">Games</Link>
-                      </li>
-                      <li className="menu_iconb">
-                        <Link to="/register">Register</Link>
-                      </li>
-                      <li className="menu_iconb">
-                        <Link to="/login">Login</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+    <>
+      <Navigation />
       <div id="contact" className="reqeste">
         <div className="container">
           <div className="row">
@@ -185,6 +145,6 @@ export const Register = () => {
         </div>
       </footer>
       <div className="overlay" />
-    </div>
+    </>
   );
 };
