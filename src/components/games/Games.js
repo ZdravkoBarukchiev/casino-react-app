@@ -10,7 +10,6 @@ export const Games = () => {
       .then((res) => res.json())
       .then((result) => setGame(result));
   }, []);
-  console.log(games);
   return (
     <>
       <Navigation />
