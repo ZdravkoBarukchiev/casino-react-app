@@ -1,4 +1,5 @@
 import { Navigation } from "../navigation/Navigation";
+import { Footer } from "../footer/Footer";
 export const Promotins = () => {
   return (
     <>
@@ -198,6 +199,9 @@ export const Promotins = () => {
           </div>
         </div>
       </div>
+      <div className="overlay" />
+      <Footer />
+      <div className="overlay" />
     </>
   );
 };

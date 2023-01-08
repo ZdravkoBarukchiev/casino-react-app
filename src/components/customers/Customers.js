@@ -1,4 +1,5 @@
 import { Navigation } from "../navigation/Navigation";
+import { Footer } from "../footer/Footer";
 
 export const Customers = () => {
   return (
@@ -93,6 +94,9 @@ export const Customers = () => {
           </div>
         </div>
       </div>
+      <div className="overlay" />
+      <Footer />
+      <div className="overlay" />
     </>
   );
 };

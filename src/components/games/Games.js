@@ -1,4 +1,5 @@
 import { Navigation } from "../navigation/Navigation";
+import { Footer } from "../footer/Footer";
 
 export const Games = () => {
   return (
@@ -78,6 +79,9 @@ export const Games = () => {
           </div>
         </div>
       </div>
+      <div className="overlay" />
+      <Footer />
+      <div className="overlay" />
     </>
   );
 };
