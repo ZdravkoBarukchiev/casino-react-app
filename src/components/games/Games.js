@@ -2,13 +2,12 @@ import { Navigation } from "../Navigation/Navigation";
 import { Footer } from "../Footer/Footer";
 import { Game } from "./Game/Game";
 import { useState, useEffect } from "react";
+import { gameService } from "../../services/gameService";
 
 export const Games = () => {
   const [games, setGame] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3030/data/games")
-      .then((res) => res.json())
-      .then((result) => setGame(result));
+    gameService().then((result) => setGame(result));
   }, []);
   return (
     <>
@@ -19,7 +18,6 @@ export const Games = () => {
             <div className="col-md-12">
               <div className="titlepage">
                 <h2>Our Casino Games</h2>
-                <span />
               </div>
             </div>
           </div>
