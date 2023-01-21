@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import { Customers } from "./components/customers/Customers";
-import { Games } from "./components/games/Games";
-import { Home } from "./components/homePage/Home";
-import { Licens } from "./components/licens/Licens";
-import { Login } from "./components/login/Login";
-import { Logout } from "./components/logout/Logout";
-import { Promotins } from "./components/promotins/Promotins";
-import { Register } from "./components/register/Register";
+import { Customers } from "./components/Customers/Customers";
+import { Games } from "./components/Games/Games";
+import { Home } from "./components/Home/Home";
+import { Licens } from "./components/Licens/Licens";
+import { Login } from "./components/Login/Login";
+import { Logout } from "./components/Logout/Logout";
+import { Promotins } from "./components/Promotins/Promotins";
+import { Register } from "./components/Register/Register";
 import { LoginContext } from "./context/loginContext";
 import { useState } from "react";
 

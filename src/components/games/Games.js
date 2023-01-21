@@ -1,6 +1,6 @@
-import { Navigation } from "../navigation/Navigation";
-import { Footer } from "../footer/Footer";
-import { Game } from "./game/Game";
+import { Navigation } from "../Navigation/Navigation";
+import { Footer } from "../Footer/Footer";
+import { Game } from "./Game/Game";
 import { useState, useEffect } from "react";
 
 export const Games = () => {

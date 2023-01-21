@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { LoginContext } from "../../context/loginContext";
-import { Navigation } from "../navigation/Navigation";
-import { Footer } from "../footer/Footer";
+import { Navigation } from "../Navigation/Navigation";
+import { Footer } from "../Footer/Footer";
 
 export const Login = () => {
   const { userLogin } = useContext(LoginContext);
